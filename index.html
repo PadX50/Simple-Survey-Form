@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Feedback Survey Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"  min="1" max="150" required>
+
+            <label for="feedback-type">Type of Feedback:</label>
+            <select name="feedback-type" id="feedback-type">
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+
+            <fieldset>
+                <legend>Services Used:</legend>
+                <input type="checkbox" id="service1" name="services" value="service1">
+                <label for="service1">Service 1</label><br>
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">Service 2</label><br>
+                <input type="checkbox" id="service3" name="services" value="service3">
+                <label for="service3">Service 3</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>which one is your favorite</legend>
+                <input type="checkbox" id="service1" name="service" value="service1">
+                <label for="service1">Book</label><br>
+                <input type="checkbox" id="book" name="service" value="service2">
+                <label for="service3">Reading</label><br>
+                <input type="checkbox" name="music" id="service" value="service3">
+                <label for="service3">Music</label>
+            </fieldset>
+
+            <label for="comments">Additional Comments</label>
+            <textarea name="comments" id="comments" rows="4"></textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <p>> © 2024 Portfolio Page. All rights reserved. / By <a href="https://www.facebook.com/chamraeunblock">Chamraeun</a></p>
+    </footer>
+</body>
+</html>
